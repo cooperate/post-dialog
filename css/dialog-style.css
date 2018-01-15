@@ -1,0 +1,79 @@
+/*wordpress post dialog style*/
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+ .dialog-content p{
+	visibility:hidden!important;height:0px;margin:0;padding:0;
+}
+}
+.dialog-overlay{
+	position: fixed;
+	display:none;/*display: flex;*/
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;  /*global font color*/
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	background-color: rgba( 0, 0, 0, 0.3);
+}
+
+.dialog-container{
+	padding: 5%;
+	display:none;/*display: block;*/
+	width: 75%;
+	height: 90%;
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	/*pointer-events: none;*/
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+
+	/* Rules below not implemented in browsers yet */
+	-o-user-select: none;
+	user-select: none;
+}
+
+.dialog-image{
+	height: 20%;
+}
+.dialog-image img{
+	height: 100%;
+}
+.dialog-header{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	height: 10%;
+}
+.dialog-header h2{
+	margin-bottom: 0px;
+	color:white!important;border-bottom: 2px solid #f25436;padding-bottom:25px;
+}
+.dialog-content > p{
+	color:white!important;text-align:left;letter-spacing:1px;
+}
+.dialog-footer{
+	height: 20%;
+}
+
+.dialog-footer-container{
+	display: inline-block;
+}
+.dialog-footer-container div{
+	padding-left: 10px;
+	padding-right:10px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}	
+.dialog-footer-address{
+}
+.dialog-footer-contact{
+}
+.dialog-footer-website{
+}
